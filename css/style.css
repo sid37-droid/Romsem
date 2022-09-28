@@ -672,6 +672,7 @@ p{
 	cursor: pointer;
 	z-index: 5;
 	padding-right: 15px;
+	display: block;
 }
 
 .test__blcok{
@@ -684,6 +685,7 @@ p{
 	text-align: center;
 	color:#fff;
 	font-size: 60px;
+	display: block;
 }
 /* *------------------------------------more */
 .More__title {
