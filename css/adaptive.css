@@ -111,6 +111,9 @@
         margin-top: -100px;
         max-width:460px;
    }
+   .more__button{
+       margin-top: 70px;
+   }
    .pizza__kombo{
        display: block;
        width:460px;
