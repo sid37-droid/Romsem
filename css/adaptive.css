@@ -72,7 +72,7 @@
     }
 
     .header__contact>h2{
-        margin: 0;
+        margin: 0 0 5px 0;
         padding: 0;
     }
     .header_worktime{
