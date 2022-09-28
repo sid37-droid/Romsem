@@ -676,7 +676,7 @@ p{
 	animation-name: fade;
 	animation-duration: 1s;
 	background: #000;
-	width: 1010px;
+	max-width: 950px;
 	height: 397px;
 	margin-bottom: 50px;
 	text-align: center;

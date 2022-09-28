@@ -66,6 +66,11 @@
         max-width:135px;
         border-right:none;
     }
+
+    .header__contact>ul>li{
+        font-size: 14px;
+    }
+
     .header__contact>h2{
         margin: 0;
         padding: 0;
