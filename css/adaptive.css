@@ -67,7 +67,7 @@
         border-right:none;
     }
 
-    .header__contact>ul>li{
+    .header__contact>ul>li>a{
         font-size: 14px;
     }
 
