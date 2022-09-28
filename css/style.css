@@ -664,7 +664,7 @@ p{
 	z-index: 1;
 	padding-right: 55px;
 	margin: -18px;
-	
+	display: block;
 }
 .slider__btn2{
 	padding-top: 160px;
@@ -685,7 +685,6 @@ p{
 	text-align: center;
 	color:#fff;
 	font-size: 60px;
-	display: block;
 }
 /* *------------------------------------more */
 .More__title {
