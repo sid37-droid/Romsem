@@ -658,6 +658,7 @@ p{
 }
 
 .slider__btn1 {
+	padding-top: 180px;
 	max-width: 60px;
 	cursor: pointer;
 	z-index: 1;
@@ -666,6 +667,7 @@ p{
 	
 }
 .slider__btn2{
+	padding-top: 160px;
 	max-width: 60px;
 	cursor: pointer;
 	z-index: 5;
