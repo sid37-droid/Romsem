@@ -111,6 +111,8 @@ p{
 	width: 100%;
 }
 
+
+
 .Main {
 	background-color: #F2F2F2;	
 	max-width:1170px;
@@ -126,6 +128,11 @@ p{
 .Delivery {	
 	max-width:430px;
 	width: 100%;
+}
+
+.Delivery__content{
+	position: fixed;
+
 }
 
 /* -Navigation--------------------------------------------------------------------------------- */
@@ -355,12 +362,14 @@ p{
 	border-radius: 5px;
 }
 .shopcart__title {
+	margin-bottom: 15px;
 	padding-top: 12px;
 	font-family: DINpros;
 	font-weight: 700;
 	font-size: 24px;
 }
 .shopcart__text {
+	
 	font-weight: 400;
 	font-size: 18px;
 	color:#A4ACAD;
@@ -879,4 +888,48 @@ display: none;
 }
 .hidden{
 	display: none;
+}
+
+
+/* =============================================================== */
+
+.vElement{
+	margin: 0 auto;
+	max-width: 250px;
+	/* background: #F46D40; */
+	display: flex;
+	margin-bottom: 5px;
+	text-align: left;
+	margin-bottom:15px ;
+	background: #fff;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.bassket{
+	padding-bottom: 5px;
+}
+
+.vElement:first-child{
+	/* background: #F46D40; */
+}
+
+.element__basket {
+}
+.element__img__basket {
+	width: 70px;
+
+}
+.element__button__basket {
+
+	color:white;
+	font-size: 10px;
+	background:rgba(244, 109, 64, 1);
+	border-radius: 100px ;
+	border-color: tomato;
+	cursor:pointer;
+}
+
+.element__count{
+	display: inline;
 }
