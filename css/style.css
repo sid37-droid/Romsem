@@ -908,18 +908,34 @@ display: none;
 
 .bassket{
 	padding-bottom: 5px;
+	max-height: 500px;
+	overflow-y: auto;
+}
+.element__footer__basket{
+	display: flex;
+	justify-content:space-between;
 }
 
-.vElement:first-child{
-	/* background: #F46D40; */
+.element__text__basket{
+	font-size: 12px;
+	color:#A4ACAD;
+	margin: 1px 0px 15px 0;
+
 }
 
-.element__basket {
+.element__price__basket{
+	font-size: 17px;
+	font-weight: 700;
+	margin-left:35px;
 }
 .element__img__basket {
 	width: 70px;
-
 }
+
+.element__basket{
+	margin-left:5px ;
+}
+
 .element__button__basket {
 
 	color:white;

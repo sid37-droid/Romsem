@@ -221,23 +221,84 @@ const obj = {
    'two565':{
         id:'two565',
         img:'img/png/main/Phyladelfia.png',
-        title:'Сет "5 Филадельфий',
-        price: 1499,
-        gramm: 1040,
-        portions:40,
+        title:'Филадельфия и ло...',
+        price: 1150,
+        gramm: 1260,
+        portions:36,
         count:0,
         want:'Хочу!'
    },
    'tree':{
         id:'tree',
         img:'img/png/main/BigPhyladelfia.png',
-        title:'Филадельфия и лосось сет',
-        price: 1300,
-        gramm: 1100,
-        portions:50,
+        title:'Самая большая Фи...',
+        price: 2100,
+        gramm: 2050,
+        portions:45,
         count:0,
         want:'Хочу!'
-   },
+   },   
+   'set6':{
+    id:'set6',
+    img:'img/png/main/Set6.png',
+    title:'Сет 6 Филад...',
+    price: 1559,
+    gramm: 1320,
+    portions:46,
+    count:0,
+    want:'Хочу!'
+  },
+  'topoviyset':{
+    id:'topoviyset',
+    img:'img/png/main/topoviyset.png',
+    title:'Топовый сет',
+    price: 1519,
+    gramm: 1020,
+    portions:40,
+    count:0,
+    want:'Хочу!'
+  },
+  'Kamikadze':{
+    id:'Kamikadze',
+    img:'img/png/main/Kamikadze.png',
+    title:'Камикадзе сет',
+    price: 1469,
+    gramm: 1200,
+    portions:52,
+    count:0,
+    want:'Хочу!'
+  },
+  'Set4':{
+    id:'Set4',
+    img:'img/png/main/Set4.png',
+    title:'Сет "4 Филадельфии"',
+    price: 1559,
+    gramm: 1100,
+    portions:32,
+    count:0,
+    want:'Хочу!'
+  },
+  'Love':{
+    id:'Love',
+    img:'img/png/main/Set4.png',
+    title:'Филадельфия LOV...',
+    price: 1479,
+    gramm: 1000,
+    portions: 40,
+    count:0,
+    want:'Хочу!'
+  },
+  'Yakudza':{
+    id:'Yakudza',
+    img:'img/png/main/Yakudza.png',
+    title:'Якудза сет',
+    price: 1499,
+    gramm: 1270,
+    portions: 50,
+    count:0,
+    want:'Хочу!'
+  },
+
 
 };
 let element;
@@ -251,11 +312,12 @@ function _createElement(id,dataID){
             <h2 class="element__title__basket">` + id.title +  `</h2>
             <p class="element__text__basket">` + id.gramm + ` грамм, ` + id.portions + ` кусочков</p>
             <div class="element__footer__basket">
+               <div>
+                  <button data-id="` + dataID + `" class="element__button__basket minus">-</button>
+                  <p class="element__count">` + id.count + `</p>
+                  <button data-id="` + dataID + `" class="element__button__basket plus">+</button>
+                </div>
                 <p class="element__price__basket">`+ id.price + ` СОМ</p>
-                <button data-id="` + dataID + `" class="element__button__basket minus">-</button>
-                <p class="element__count">` + id.count + `</p>
-                <button data-id="` + dataID + `" class="element__button__basket plus">+</button>
-
             </div> 
             </div>
         `
