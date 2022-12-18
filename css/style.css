@@ -911,6 +911,20 @@ display: none;
 	max-height: 500px;
 	overflow-y: auto;
 }
+
+::-webkit-scrollbar {
+    width: 1px; /* ширина для вертикального скролла */
+    height: 8px; /* высота для горизонтального скролла */
+    /* background-color: rgba(244, 109, 64, 1); */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #843465;
+    border-radius: 9em;
+    box-shadow: inset 1px 1px 10px #3b3b3b;
+}
+
+
 .element__footer__basket{
 	display: flex;
 	justify-content:space-between;
