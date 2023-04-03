@@ -5,6 +5,16 @@
     }
 }
 @media(max-width:490px){
+
+    body{
+        transform: scale(100%);
+        /* margin-top: -70px; */
+        margin: 0 auto;
+        /* margin-left: -4px; */
+        overflow-x: hidden;
+    }
+
+
     body{
         min-width: fit-content;
     }
@@ -203,3 +213,4 @@
         text-align: center;
     }
 }
+

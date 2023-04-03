@@ -78,6 +78,13 @@ p{
 	margin: 0;
 	padding: 0;
 }
+body{
+	transform: scale(80%);
+	margin-top: -70px;
+	margin-left: -170px;
+	overflow-x: hidden;
+}
+
 /* ---------------------------------------------------------------------------- */
 .wrapper {
 	overflow: hidden;
@@ -963,3 +970,7 @@ display: none;
 .element__count{
 	display: inline;
 }
+
+
+
+

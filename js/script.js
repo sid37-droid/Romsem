@@ -239,68 +239,68 @@ const obj = {
         want:'Хочу!'
    },   
    'set6':{
-    id:'set6',
-    img:'img/png/main/Set6.png',
-    title:'Сет 6 Филад...',
-    price: 1559,
-    gramm: 1320,
-    portions:46,
-    count:0,
-    want:'Хочу!'
+        id:'set6',
+        img:'img/png/main/Set6.png',
+        title:'Сет 6 Филад...',
+        price: 1559,
+        gramm: 1320,
+        portions:46,
+        count:0,
+        want:'Хочу!'
   },
   'topoviyset':{
-    id:'topoviyset',
-    img:'img/png/main/topoviyset.png',
-    title:'Топовый сет',
-    price: 1519,
-    gramm: 1020,
-    portions:40,
-    count:0,
-    want:'Хочу!'
+        id:'topoviyset',
+        img:'img/png/main/topoviyset.png',
+        title:'Топовый сет',
+        price: 1519,
+        gramm: 1020,
+        portions:40,
+        count:0,
+        want:'Хочу!'
   },
   'Kamikadze':{
-    id:'Kamikadze',
-    img:'img/png/main/Kamikadze.png',
-    title:'Камикадзе сет',
-    price: 1469,
-    gramm: 1200,
-    portions:52,
-    count:0,
-    want:'Хочу!'
+        id:'Kamikadze',
+        img:'img/png/main/Kamikadze.png',
+        title:'Камикадзе сет',
+        price: 1469,
+        gramm: 1200,
+        portions:52,
+        count:0,
+        want:'Хочу!'
   },
   'Set4':{
-    id:'Set4',
-    img:'img/png/main/Set4.png',
-    title:'Сет "4 Филадельфии"',
-    price: 1559,
-    gramm: 1100,
-    portions:32,
-    count:0,
-    want:'Хочу!'
+        id:'Set4',
+        img:'img/png/main/Set4.png',
+        title:'Сет "4 Филадельфии"',
+        price: 1559,
+        gramm: 1100,
+        portions:32,
+        count:0,
+        want:'Хочу!'
   },
   'Love':{
-    id:'Love',
-    img:'img/png/main/Set4.png',
-    title:'Филадельфия LOV...',
-    price: 1479,
-    gramm: 1000,
-    portions: 40,
-    count:0,
-    want:'Хочу!'
+        id:'Love',
+        img:'img/png/main/Set4.png',
+        title:'Филадельфия LOV...',
+        price: 1479,
+        gramm: 1000,
+        portions: 40,
+        count:0,
+        want:'Хочу!'
   },
   'Yakudza':{
-    id:'Yakudza',
-    img:'img/png/main/Yakudza.png',
-    title:'Якудза сет',
-    price: 1499,
-    gramm: 1270,
-    portions: 50,
-    count:0,
-    want:'Хочу!'
+        id:'Yakudza',
+        img:'img/png/main/Yakudza.png',
+        title:'Якудза сет',
+        price: 1499,
+        gramm: 1270,
+        portions: 50,
+        count:0,
+        want:'Хочу!'
   },
-
-
 };
+
+
 let element;
 function _createElement(id,dataID){       
     element = document.createElement('div');
@@ -318,7 +318,7 @@ function _createElement(id,dataID){
                   <button data-id="` + dataID + `" class="element__button__basket plus">+</button>
                 </div>
                 <p class="element__price__basket">`+ id.price + ` СОМ</p>
-            </div> 
+              </div> 
             </div>
         `
     );  
@@ -335,21 +335,21 @@ document.onclick = (event) =>{
             shopcartTitle.textContent = 'Ваша корзина'
             shopcartText.style.display = 'none'
             shopcartFree.style.display = 'none'
-
         }
-
     }
     if(event.target.classList.contains('plus')){
       obj[id]['count']++;
-      element.style.display = 'none';
+      element.parentNode.removeChild(element);
       _createElement(obj[id], obj[id]['id']);
   }
     if(event.target.classList.contains('minus')){
       obj[id]['count']--;
-      element.style.display = 'none';
+      element.parentNode.removeChild(element)
       _createElement(obj[id], obj[id]['id']);
       if (obj[id]['count'] <= 0){
           element.style.display = 'none';
       }
   }
 };
+
+
